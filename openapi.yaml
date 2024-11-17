@@ -133,6 +133,11 @@ paths:
           application/json:
             schema:
               $ref: '#/components/schemas/Job'
+    delete:
+      summary: Delete Jobs
+      responses:
+        '204':
+          description: No Content
   /jobs/{id}/job-application:
     parameters:
       - schema:
